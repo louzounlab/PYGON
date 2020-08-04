@@ -1,0 +1,52 @@
+{
+  "input_vec": {
+    "_type": "choice",
+    "_value": [
+      ["Degree"],
+      ["Motif_3"],
+      ["Betweenness"],
+      ["BFS"],
+      ["Degree", "Motif_3"],
+      ["Betweenness", "BFS"],
+      ["Degree", "Betweenness", "BFS"],
+      ["Degree", "Betweenness", "BFS", "Motif_3"],
+      []
+    ]
+  },
+  "optimizer": {
+    "_type": "choice",
+    "_value": ["Adam", "SGD"]
+  },
+  "activation": {
+    "_type": "choice",
+    "_value": ["ReLU", "tanh"]
+  },
+  "learning_rate": {
+    "_type": "quniform",
+    "_value": [1e-8, 0.2, 1e-8]
+  },
+  "dropout": {
+    "_type": "uniform",
+    "_value": [0, 0.8]
+  },
+  "regularization": {
+    "_type": "uniform",
+    "_value": [0, 1]
+  },
+  "h1_dim": {
+    "_type": "quniform",
+    "_value": [20, 500, 5]
+  },
+  "h2_dim": {
+    "_type": "quniform",
+    "_value": [20, 500, 5]
+  },
+  "h3_dim": {
+    "_type": "quniform",
+    "_value": [20, 500, 5]
+  },
+  "h4_dim": {
+    "_type": "quniform",
+    "_value": [20, 500, 5]
+  }
+}

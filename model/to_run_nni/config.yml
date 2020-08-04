@@ -1,0 +1,18 @@
+experimentName: fine_tuning_Clique_GCN
+trialConcurrency: 4
+maxExecDuration: 5d
+maxTrialNum: 4000
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+  classArgs:
+    optimize_mode: maximize
+trial:
+  command: python nni_experiment.py -n 500 --size 20
+  codeDir: .
+  gpuNum: 1
+localConfig:
+  maxTrialNumPerGpu: 3
+  useActiveGpu: true
