@@ -4,8 +4,8 @@ A Graph Neural Network Tool for Recovering Dense Sub-graphs in Random Dense Grap
  
 ### Installation
 
-This code requires the installing and running the [graph-measures](https://github.com/louzounlab/graph-measures) package. 
-A detailed explanation appears in a manual in graph-measures repository. Here we present short instructions:
+This code requires to install and run the [graph-measures](https://github.com/louzounlab/graph-measures) package. Currently, we have a copy of this package that is ready to use (in "graph_calculations" directory), but it is possible to remove its content, download the graph_measures repository and follow the instructions below to be able to run this code. The conda environment for this project (part 2 in the instructions) is still required. \
+A detailed explanation for graph-measures package appears in a manual in graph-measures repository. Here we present short instructions:
 
 1. Download the graph-measures project into "graph_calculations/graph_measures".
 2. Create the anaconda environment for running this project by running _conda env create -f env.yml_ in the terminal.
